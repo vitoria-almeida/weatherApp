@@ -28,6 +28,9 @@ body .container {
 }
 body .container .form {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 body .container .form .formInput input {
   width: 100%;

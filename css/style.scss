@@ -27,21 +27,24 @@ body {
         justify-content: space-around;
 
         .form {  
-            width: 100%;  
-                  
+            width: 100%;
+            display: flex;
+            flex-direction: column;  
+            gap: 10px;
+
             .formInput {
                 input {
-                width: 100%;
-                padding: 8px;
-                border: 1px solid rgb(186, 182, 182);
+                    width: 100%;
+                    padding: 8px;
+                    border: 1px solid rgb(186, 182, 182);
                 } 
 
                 button {
-                position: relative;                   
-                left: 92%;
-                bottom: 33px;
-                border: none;
-                background: transparent;
+                    position: relative;                   
+                    left: 92%;
+                    bottom: 33px;
+                    border: none;
+                    background: transparent;
                 }                
             }
         }  
