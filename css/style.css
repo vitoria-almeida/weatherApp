@@ -23,7 +23,23 @@ body .container {
   padding: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: space-around;
+}
+body .container .form {
+  width: 100%;
+}
+body .container .form .formInput input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid rgb(186, 182, 182);
+}
+body .container .form .formInput button {
+  position: relative;
+  left: 92%;
+  bottom: 33px;
+  border: none;
+  background: transparent;
 }
 body .container h1 {
   font-size: 15px;
@@ -33,31 +49,39 @@ body .container #weatherData {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #e9f6ff;
+  width: 300px;
+  border-top: 1px solid rgb(186, 182, 182);
 }
 body .container #weatherData h2 {
   font-size: 60px;
-  font-weight: 600;
+  font-weight: 500;
 }
 body .container #weatherData h3, body .container #weatherData h4 {
   font-weight: 500;
   text-transform: capitalize;
 }
+body .container #weatherData h4 {
+  padding: 15px;
+}
 body .container #weatherData h4 span img {
   width: 20px;
 }
-body .container #weatherData div {
+body .container #weatherData #weatherCard {
   display: flex;
+  width: 100%;
+  justify-content: center;
 }
-body .container #weatherData div .weatherDiv {
+body .container #weatherData #weatherCard .weatherDiv {
   display: flex;
   align-items: center;
-  border: 1px solid black;
 }
-body .container #weatherData div .weatherDiv .weatherIcon {
+body .container #weatherData #weatherCard .weatherDiv .weatherIcon {
   color: #64ADDD;
+  display: flex;
+  font-size: 30px;
+  padding: 0 10px;
 }
-body .container #weatherData div .weatherDiv .weatherText {
+body .container #weatherData #weatherCard .weatherDiv .weatherText {
   display: flex;
   flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

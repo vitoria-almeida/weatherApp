@@ -21,12 +21,29 @@ body {
         background-color: white;
         width: 300px;
         padding: 20px;
-
         display: flex;
         flex-direction: column;
+        align-items: center;
         justify-content: space-around;
 
-        .form {
+        .form {  
+            width: 100%;  
+                  
+            .formInput {
+                input {
+                width: 100%;
+                padding: 8px;
+                border: 1px solid rgb(186, 182, 182);
+                } 
+
+                button {
+                position: relative;                   
+                left: 92%;
+                bottom: 33px;
+                border: none;
+                background: transparent;
+                }                
+            }
         }  
 
         h1 {
@@ -38,11 +55,12 @@ body {
             display: flex;
             flex-direction: column;
             align-items: center;
-            background-color: #e9f6ff;
+            width: 300px;
+            border-top: 1px solid rgb(186, 182, 182);
 
             h2 {
                 font-size: 60px;
-                font-weight: 600;
+                font-weight: 500;
             }
         
             h3, h4 {
@@ -51,21 +69,27 @@ body {
             }
         
             h4 { 
+                padding: 15px;
+
                 span img {
                     width: 20px;
                 }
             }     
         
-            div {
+            #weatherCard {
                 display: flex;
+                width: 100%;
+                justify-content: center;
 
                 .weatherDiv {
                     display: flex;
                     align-items: center;
-                    border: 1px solid black;
 
                     .weatherIcon {
                         color: #64ADDD;
+                        display: flex;
+                        font-size: 30px;
+                        padding: 0 10px;
                     }
     
                     .weatherText {
@@ -73,7 +97,7 @@ body {
                         flex-direction: column;
                     }
                 }
-            }                 
+            } 
         }        
     }
 }
