@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script type="module" src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class='container'>   
+        <div class='form'>
+            <h1>Weather App</h1>
+            <div class='formInput'>
+                <input type='text' placeholder='Search for a city' id='cityInput'>
+                <button id='search'>
+                    <i class='fa-solid fa-magnifying-glass'></i>
+                </button>
+            </div>
+        </div>
+
+        <div class='hide' id='weatherData'>
+            <img src='' alt='Weather Icon' id='weatherIcon'/>
+            <h2><span id='temperature'></span>&deg;C</h2>
+            <h3 id='weatherDescription'></h3>
+            <h4><i class='fa-solid fa-location-dot'></i>
+                <span id='city'></span>
+                <span id='country'></span>
+                <span>
+                    <img src='' alt='Country Flag' id='countryFlag'/>
+                </span>
+            </h4>
+
+            <div>
+                <div class='weatherDiv'>
+                    <div class='weatherIcon'>
+                        <i class="fa-solid fa-temperature-low"></i>
+                    </div>
+                    <div class='weatherText'>
+                        <h5><span id='feelsLike'></span>&deg;C</h5>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+
+                <div class='weatherDiv'>
+                    <div class='weatherIcon'>
+                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                    </div>
+                    <div class='weatherText'>
+                        <h5><span id='humidity'></span>%</h5>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

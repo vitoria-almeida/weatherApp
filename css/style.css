@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hide {
+  display: none !important;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(120deg, rgb(100, 173, 221) 0%, rgb(154, 206, 241) 54%, rgb(171, 222, 255) 100%);
+}
+body .container {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .container h1 {
+  font-size: 15px;
+  color: #64ADDD;
+}
+body .container #weatherData {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e9f6ff;
+}
+body .container #weatherData h2 {
+  font-size: 60px;
+  font-weight: 600;
+}
+body .container #weatherData h3, body .container #weatherData h4 {
+  font-weight: 500;
+  text-transform: capitalize;
+}
+body .container #weatherData h4 span img {
+  width: 20px;
+}
+body .container #weatherData div {
+  display: flex;
+}
+body .container #weatherData div .weatherDiv {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+}
+body .container #weatherData div .weatherDiv .weatherIcon {
+  color: #64ADDD;
+}
+body .container #weatherData div .weatherDiv .weatherText {
+  display: flex;
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */
